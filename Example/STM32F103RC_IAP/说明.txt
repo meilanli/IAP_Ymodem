@@ -1,0 +1,12 @@
+F103_bl:
+	bootloader工程,
+	串口1(PA9、PA10)接收
+	串口3(PC10,PC11)打印
+	flash占用约4-5k, RAM 4K
+	对于小容量型号，优化串口驱动、flash驱动、改用LL库或寄存器、个别数据类型等,可以控制在4K内, RAM占用4K内
+	
+F103_app1：
+	app工程，PA0、PA1间隔100ms轮闪
+	
+F103_app1：
+	app工程，PA0、PA1间隔500ms轮闪
